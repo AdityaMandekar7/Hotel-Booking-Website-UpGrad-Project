@@ -7,7 +7,29 @@
 
 <body>
     <div>
-        CONTACT US
+        <form action="index.html" method="post" onsubmit="return submitForm()">
+            <div>
+                Thank you for reaching out!!!
+                <br>
+                <br>
+                Please enter your email and we will get back to you.
+            </div>
+            <br>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            function submitForm() {
+                var email = document.getElementById('email').value;
+
+                // Redirect to index.html with URL parameters
+                window.location.href = 'index.html?email=' + encodeURIComponent(email);
+
+                // Prevent the form from actually submitting
+                return false;
+            }
+        </script>
     </div>
 </body>
 

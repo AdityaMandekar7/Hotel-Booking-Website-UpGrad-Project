@@ -8,11 +8,46 @@
 <body>
     <div>
         <header>
-            <a href="login.html" target="_blank">Login</a> <img src="assests\images\logo.png" height="150" width="200">
+            <a href="login.html">Login</a>
+            <a href="index.html"><img src="assests\images\logo.png" height="150" width="200"></a>
         </header>
         <div>
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-            <div><a href="./payment.html">Book Now</a></div>
+            <div>
+                <form action="payment.html" method="post" onsubmit="return submitForm()">
+                    <label for="adults">Adults:</label>
+                    <input type="number" id="adults" required min="1">
+                    <br>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <br>
+                    <label for="fromdate">From Date:</label>
+                    <input type="date" id="fromdate" required>
+                    <br>
+                    <label for="todate">To Date:</label>
+                    <input type="date" id="todate" required>
+                    <br>
+                    <label for="total">Total:</label>
+                    <input type="number" id="total" disabled>
+                    <br>
+                    <button type="submit">Book Now</button>
+                </form>
+                <script>
+                    function submitForm() {
+                        var adults = document.getElementById('adults').value;
+                        var name = document.getElementById('name').value;
+                        var fromdate = document.getElementById('fromdate').value;
+                        var todate = document.getElementById('todate').value;
+                        var total = document.getElementById('total').value;
+
+                        // Redirect to index.html with URL parameters
+                        window.location.href = 'payment.html?adults=' + encodeURIComponent(adults) + '&name=' + encodeURIComponent(name) + '&fromdate=' + encodeURIComponent(fromdate) + '&todate=' + encodeURIComponent(todate) + '&total=' + encodeURIComponent(total);
+
+                        // Prevent the form from actually submitting
+                        return false;
+                    }
+                </script>
+            </div>
             <div>
                 <h2>Radisson Blu Hotel</h2>
             </div>
@@ -60,7 +95,7 @@
         </div>
         <br>
         <footer>
-            <a href="./contact.html" target="_blank">Contact Us</a>
+            <a href="./contact.html">Contact Us</a>
             <div>
                 <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20"
                         width="22"></a>
