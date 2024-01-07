@@ -1,0 +1,21 @@
+html, body {
+    margin: 20;
+    padding: 20;
+    height: 100%;
+}
+
+header .logo {
+    height: 60px;
+    width: 60px;
+}
+
+body .hImage{
+    height: 200px;
+    width: 250px;
+}
+
+body .fImage{
+    height: 20px;
+    width: 22px;
+}
+
