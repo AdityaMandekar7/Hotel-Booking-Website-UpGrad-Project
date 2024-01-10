@@ -1,7 +1,8 @@
 html, body {
-    margin: 20;
+    margin: 0;
     padding: 20;
     height: 100%;
+    background-color: #e0e0e0;
 }
 
 header .logo {
@@ -11,10 +12,20 @@ header .logo {
 body .RadissonImage{
     height: 500px;
     width: 500px;
+    margin-top: 2%;
 }
-
+body .detailsdiv{
+    margin-left: 4%;
+    margin-right: 4%;
+}
 body .fImage{
     height: 20px;
     width: 22px;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
 }
 

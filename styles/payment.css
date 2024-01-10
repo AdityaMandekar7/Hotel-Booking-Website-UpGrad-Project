@@ -1,7 +1,8 @@
 html, body {
-    margin: 20;
+    margin: 0;
     padding: 20;
     height: 100%;
+    background-color: #e0e0e0;
 }
 
 header .logo {
@@ -11,10 +12,39 @@ header .logo {
 body .RadissonImage{
     height: 500px;
     width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(132,136,139);
+    margin: auto;
 }
-
+body .hotelDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(132,136,139);
+}
 body .fImage{
     height: 20px;
     width: 22px;
 }
+body .guestDetails{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
 
+body .tariffdetails{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
+}

@@ -18,45 +18,49 @@
                 <li><a href="" id="mapViewLink">Map View</a></li>
             </ul>
             <div id="listViewSection">
-                <a href="./detail.html">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                        class="hImage">
+                <div class="hotelDetails">
+                    <a href="./detail.html">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                            class="hImage">
+                        <div>
+                            <h3>Radisson Blu Hotel</h3>
+                        </div>
+                        <div>
+                            5 Star
+                        </div>
+                        <br>
+                        <div>
+                            New Delhi
+                        </div>
+                    </a>
+                </div>
+                <br>
+                <div class="hotelDetails">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="hImage">
                     <div>
-                        <h3>Radisson Blu Hotel</h3>
+                        <h3>The Lalit New Delhi</h3>
                     </div>
                     <div>
-                        5 Star
+                        4.5 Star
                     </div>
                     <br>
                     <div>
                         New Delhi
                     </div>
+                </div>
+                <br>
+                <div class="hotelDetails">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" class="hImage">
+                    <div>
+                        <h3>Taj Palace</h3>
+                    </div>
+                    <div>
+                        4.0 Star
+                    </div>
                     <br>
-                </a>
-
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="hImage">
-                <div>
-                    <h3>The Lalit New Delhi</h3>
-                </div>
-                <div>
-                    4.5 Star
-                </div>
-                <br>
-                <div>
-                    New Delhi
-                </div>
-                <br>
-
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" class="hImage">
-                <div>
-                    <h3>Taj Palace</h3>
-                </div>
-                <div>
-                    4.0 Star
-                </div>
-                <br>
-                <div>
-                    New Delhi
+                    <div>
+                        New Delhi
+                    </div>
                 </div>
             </div>
             <br>
@@ -80,7 +84,7 @@
     </div>
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         // Smooth scroll function
         function scrollToElement(elementId) {
             document.getElementById(elementId).scrollIntoView({
@@ -89,16 +93,17 @@
         }
 
         // List View link click event
-        document.getElementById('listViewLink').addEventListener('click', function(event) {
+        document.getElementById('listViewLink').addEventListener('click', function (event) {
             event.preventDefault();
             scrollToElement('listViewSection');
         });
 
         // Map View link click event
-        document.getElementById('mapViewLink').addEventListener('click', function(event) {
+        document.getElementById('mapViewLink').addEventListener('click', function (event) {
             event.preventDefault();
             scrollToElement('mapViewSection');
         });
     });
 </script>
+
 </html>
