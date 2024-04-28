@@ -9,21 +9,28 @@ header .logo {
     height: 60px;
     width: 60px;
 }
-body .RadissonImage{
+.RadissonImage {
     height: 500px;
     width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(132,136,139);
     margin: auto;
-}
-body .hotelDetails{
+    background-color: rgb(132, 136, 139);
+    background-position: 20%;
+  }
+  .hotelDetails {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(132,136,139);
-}
+    background-color: rgb(132, 136, 139);
+    width: 40%; /* Ensures the section takes full width */
+    transform: translateX(73%); /* Centers the section vertically */
+
+
+
+  }
 body .fImage{
     height: 20px;
     width: 22px;
